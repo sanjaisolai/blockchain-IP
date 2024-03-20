@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation Registry</title>
+</head>
+<body>
+    <h1>Add Creation</h1>
+    <form action="{{ url_for('add_creation') }}" method="post">
+        <label for="userName">User Name:</label><br>
+        <input type="text" id="userName" name="userName"><br>
+        <label for="aadhaarNumber">Aadhaar Number:</label><br>
+        <input type="text" id="aadhaarNumber" name="aadhaarNumber"><br>
+        <label for="creationName">Creation Name:</label><br>
+        <input type="text" id="creationName" name="creationName"><br>
+        <label for="creationDetails">Creation Details:</label><br>
+        <textarea id="creationDetails" name="creationDetails"></textarea><br>
+        <button type="submit">Add Creation</button>
+    </form>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="../static/ip.js"></script> -->
+</body>
+</html>

@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Add Creation</h1>
-    <form action="{{ url_for('add_creation') }}" method="post">
+    <form id="creationForm">
         <label for="userName">User Name:</label><br>
         <input type="text" id="userName" name="userName"><br>
         <label for="aadhaarNumber">Aadhaar Number:</label><br>
@@ -16,9 +16,15 @@
         <input type="text" id="creationName" name="creationName"><br>
         <label for="creationDetails">Creation Details:</label><br>
         <textarea id="creationDetails" name="creationDetails"></textarea><br>
+        <input type="text" id="user_address" name="user_address" value="sample" hidden>
+        <input type="text" id="tx_hash" name="tx_hash" value="sample" hidden>
+        <input type="number" id="id" name="id" value="0" hidden>
         <button type="submit">Add Creation</button>
     </form>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
-    <script src="../static/ip.js"></script> -->
+    <h3>Your creation id is</h3><br>
+    <div id="creationid"></div>
+    <h3>please keep it safe</h3>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script> -->
+    <script src="../static/bundle.js"></script>
 </body>
 </html>

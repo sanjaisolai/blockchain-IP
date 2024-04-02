@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from web3 import Web3, HTTPProvider
+#from web3 import Web3, HTTPProvider
 import json
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('IP.html')
+    return render_template('getcreation.html')
 
 
 # @app.route('/add-creation', methods=["GET","POST"])
